@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Wars Card Game</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="wrapper">
+			<section class="top">
+				<button id="newDeck" class="btn">New Game</button>
+				<h2 id="msg"></h2>
+			</section>
+	
+			<section class="playfield">
+				<div class="hand player-1">
+					<div id="player1" class="cards-played"></div>
+					<h3>Player</h3>
+					<p id="score1"></p>
+				</div>
+				<div class="hand player-2">
+					<div id="player2" class="cards-played"></div>
+					<h3>CPU</h3>
+					<p id="score2"></p>
+				</div>
+			</section>
+	
+			<section class="deck">
+				<h2>Remaining cards: <span id="cardsRemain">52</span></h2>
+				<button id="draw" class="btn">Draw</button>
+			</section>
+		</div>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

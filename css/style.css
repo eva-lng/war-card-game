@@ -1,0 +1,91 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+html, body {
+  height: 100%;
+}
+html {
+  font-size: 16px;
+}
+body {
+  background: linear-gradient(#487137, #12350D);
+  color: #9EB496;
+  font-family: 'VT323',sans-serif;
+}
+.wrapper {
+  padding: 5rem;
+}
+img {
+  display: block;
+  margin: 0 auto;
+  height: 150px;
+  z-index: -1;
+}
+.hand div img:not(:first-child) {
+  position: relative;
+  bottom: 125px;
+  z-index: 1;
+}
+.hand div img:last-child {
+  bottom: 250px;
+}
+.deck, .playfield, .top {
+  text-align: center;
+}
+.playfield {
+  display: flex;
+  justify-content: space-evenly;
+}
+.cards-played {
+  height: 200px;
+}
+.btn {
+  display: inline-block;
+  padding: 0.7em 1.4em;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.15em;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #FFFFFF;
+  background-color: #3369ff;
+  box-shadow: inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+  text-align: center;
+  position: relative;
+}
+.btn:active {
+  top: 0.1em;
+}
+#msg {
+  margin-top: 15px;
+  height: 35px;
+  color: #FFFFFF;
+  font-size: 2.3rem;
+}
+h3 {
+  font-weight: normal;
+  font-size: 1.3rem;
+}
+p {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
+@media all and (max-width:30em) {
+  .btn {
+    display:block;
+    margin:0.4em auto;
+  }
+}
